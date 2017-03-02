@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.text.Text?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Button?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="application.AppointmentController" hgap="40" vgap="10" >
+  <Label text="Formål:"
+		GridPane.columnIndex="0" 	GridPane.rowIndex="0"
+	/>
+  <TextField fx:id="formaltext" promptText="Ditt formål.." prefColumnCount="30"
+  	GridPane.columnIndex="1" 	GridPane.rowIndex="0"
+    onFocusedChange="#formalFocusChange"
+  />
+  <Text fx:id="formalValid"
+		GridPane.columnIndex="2" 	GridPane.rowIndex="0"
+    	fill="red"
+    />
+  	
+  	 
+  <Label text="Rom:"
+	GridPane.columnIndex="0" 	GridPane.rowIndex="1"
+	/>
+  <TextField fx:id="romtext" promptText="hvilket rom?"
+    GridPane.columnIndex="1" 	GridPane.rowIndex="1"
+    onFocusedChange="#romFocusChange"
+    onTextChange="#romChange"
+  	/>
+  <Text fx:id="romValid"
+		GridPane.columnIndex="2" 	GridPane.rowIndex="1"
+    	fill="red"
+    />
+  
+  
+  <Label text="Dato:"
+	GridPane.columnIndex="0" 	GridPane.rowIndex="2"
+	/>
+  <DatePicker fx:id="dato"
+    	GridPane.columnIndex="1" 	GridPane.rowIndex="2"
+    	onAction="#onDateChange"
+    />
+  <Text fx:id="dateValid"
+		GridPane.columnIndex="2" 	GridPane.rowIndex="2"
+    	fill="red"
+    />
+  
+  
+  <Label text="Fra:"
+	GridPane.columnIndex="0" 	GridPane.rowIndex="3"
+	/> 
+  <ComboBox fx:id="fraTid" 
+  	GridPane.columnIndex="1" GridPane.rowIndex="3" 
+  	onAction="#onTimeChange"
+  	/>
+
+  <Label text="Til:"
+	GridPane.columnIndex="2" 	GridPane.rowIndex="3"
+	/>
+  <ComboBox fx:id="tilTid" 
+  	GridPane.columnIndex="3" GridPane.rowIndex="3" 
+  	onAction="#onTimeChange"
+  	/>
+  <Text fx:id="timeValid"
+		GridPane.columnIndex="4" 	GridPane.rowIndex="3"
+    	fill="red"
+    />
+  
+  
+  <CheckBox fx:id="repetisjon"
+  	GridPane.columnIndex="0" 	GridPane.rowIndex="4"
+  	onAction="#onCheckbox"
+  	/>
+  	
+  <RadioButton fx:id="freq1" selected="true" text="Daily"
+  	GridPane.columnIndex="1" 	GridPane.rowIndex="4"
+  	onAction="#onFreqChange"
+  	>
+		<toggleGroup>
+			<ToggleGroup fx:id="toggleGroup" />
+		</toggleGroup>
+  </RadioButton>
+  <RadioButton fx:id="freq2" selected="false"
+					text="Weekly" toggleGroup="$toggleGroup" 
+					GridPane.columnIndex="1" 	GridPane.rowIndex="5"
+					onAction="#onFreqChange"
+	/>
+  <RadioButton fx:id="freq3" selected="false"
+					text="Every forth week" toggleGroup="$toggleGroup" 
+					GridPane.columnIndex="1" 	GridPane.rowIndex="6"
+					onAction="#onFreqChange"
+	/>
+	
+					
+  <Label text="SluttDato:"
+	GridPane.columnIndex="2" 	GridPane.rowIndex="4"
+	/>
+  <DatePicker fx:id="sluttDato"
+    	GridPane.columnIndex="3" 	GridPane.rowIndex="4"
+    	onAction="#onSluttDateChange"
+    />
+  <Text fx:id="sluttDateValid"
+		GridPane.columnIndex="4" 	GridPane.rowIndex="4"
+    	fill="red"
+    />
+    
+    
+  <Button fx:id="submit"
+  		GridPane.columnIndex="2" 	GridPane.rowIndex="5"
+  		text="submit"
+  		onAction="#onSubmit"
+  	/>
+  <Text fx:id="submitValid"
+		GridPane.columnIndex="3" 	GridPane.rowIndex="5"
+    	fill="red"
+    />
+  
+    
+</GridPane>

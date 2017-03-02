@@ -1,0 +1,27 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.graybutton {
+	-fx-background-color: gray;
+	-fx-border-width: 0.4;
+	-fx-border-color: black;
+}
+
+.orangebutton{
+	-fx-background-color: orange;
+	-fx-border-width: 0.4;
+	-fx-border-color: black;
+	
+}
+
+.removeLeft{
+	-fx-background-color: gray;
+	-fx-border-width: 0.4;
+	-fx-border-color: black;
+}
+
+.removeRight{
+	-fx-background-color: gray;
+	-fx-border-width: 0.4, 0, 0.4, 0.4;
+	-fx-border-color: black;
+	
+}

@@ -1,0 +1,10 @@
+.grid,
+.pane {
+	-fx-background-color:rgb(55,75,86);
+	-fx-border-width:0.4;
+	-fx-border-color:rgb(7,27,46);
+}
+
+.figure {
+	
+}

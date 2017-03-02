@@ -1,0 +1,32 @@
+.focusrectangle,
+.rectangle {
+	-fx-border-width:0.2;
+	-fx-border-color: dimgray;
+} 
+
+
+.focusrectangle {
+	-fx-background-color: rgb(227,201,176);
+}
+
+.rectangle {
+	-fx-background-color: rgb(218,194,170);
+}
+
+.country {
+	-fx-opacity:0.9;
+}
+
+.currency {
+	-fx-opacity:0.25;
+}
+
+.reference,
+.value {
+	-fx-opacity:0.7;
+	-fx-font-size:22;
+}
+
+.reference {
+	-fx-fill: rgb(193,55,36);
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="300.0" styleClass="focusrectangle" stylesheets="@Oving1b.css">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="25.0" styleClass="country">
+               <image>
+                  <Image url="@../../../../../Desktop/Screen%20Shot%202017-02-09%20at%2016.20.01.png" />
+               </image>
+           	</ImageView>
+           	<Text layoutX="95.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="currency" text="USD" />
+            <TextFlow layoutX="174.0" layoutY="35.0" prefHeight="15.0" prefWidth="100.0" textAlignment="RIGHT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="reference" text="10,000" textAlignment="RIGHT" wrappingWidth="1.0" />
+               </children>
+            </TextFlow>
+         </children>
+      </Pane>
+      <Pane prefHeight="100.0" prefWidth="300.0" styleClass="rectangle" stylesheets="@Oving1b.css">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="25.0" styleClass="country">
+               <image>
+                  <Image url="@../../../../../Desktop/Screen%20Shot%202017-02-09%20at%2016.21.32.png" />
+               </image>
+           	</ImageView>
+           	<Text layoutX="95.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="currency" text="JPY" />
+            <TextFlow layoutX="174.0" layoutY="35.0" prefHeight="15.0" prefWidth="100.0" textAlignment="RIGHT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="value" text="992,815" textAlignment="RIGHT" wrappingWidth="1.0" />
+               </children>
+            </TextFlow>
+         </children>
+      </Pane>
+      <Pane prefHeight="100.0" prefWidth="300.0" styleClass="rectangle" stylesheets="@Oving1b.css">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="25.0" styleClass="country">
+               <image>
+                  <Image url="@../../../../../Desktop/Screen%20Shot%202017-02-09%20at%2016.22.06.png" />
+               </image>
+           	</ImageView>
+           	<Text layoutX="95.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="currency" text="EUR" />
+            <TextFlow layoutX="174.0" layoutY="35.0" prefHeight="15.0" prefWidth="100.0" textAlignment="RIGHT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="value" text="7,694" textAlignment="RIGHT" wrappingWidth="1.0" />
+               </children>
+            </TextFlow>
+         </children>
+      </Pane>
+      <Pane prefHeight="100.0" prefWidth="300.0" styleClass="rectangle" stylesheets="@Oving1b.css">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="25.0" styleClass="country">
+               <image>
+                  <Image url="@../../../../../Desktop/Screen%20Shot%202017-02-09%20at%2016.22.21.png" />
+               </image>
+           	</ImageView>
+           	<Text layoutX="95.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="currency" text="GBP" />
+            <TextFlow layoutX="174.0" layoutY="35.0" prefHeight="15.0" prefWidth="100.0" textAlignment="RIGHT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="value" text="6,559" textAlignment="RIGHT" wrappingWidth="1.0" />
+               </children>
+            </TextFlow>
+         </children>
+      </Pane>
+   </children>
+</VBox>
